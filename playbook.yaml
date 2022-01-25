@@ -1,0 +1,14 @@
+-
+  name: 'Prep VMs for app deployment'
+  hosts: virtual_machines
+  become: yes
+  become_method: sudo
+  tasks:
+    -
+      name: 'Verify who we are acting as'
+      command: whoami
+    -
+      name: 'Install Python 3'
+      apt:
+        name: python
+        
