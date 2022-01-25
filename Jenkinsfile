@@ -10,7 +10,7 @@ pipeline {
             steps {
                 withCredentials([usernamePassword(credentialsId: 'dockerhublogin', passwordVariable: 'dockerHubPassword', usernameVariable: 'dockerHubUser')]) {
                     sh "docker login -u ${env.dockerHubUser} -p ${env.dockerHubPassword}"
-                    sh 'docker push spencerhurrle/kubetastic:latest'
+                    sh 'docker push spencerhurrle/case-study:latest'
                 }
             }
         }
