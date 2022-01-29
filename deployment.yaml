@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment 
+metadata:
+  name: webapp
+  labels:
+    app: spencer
+    type: flask
+
+spec:
+  template:
+    metadata:
+      name: webapp
+      labels:
+        app: spencer
+        type: flask
+    spec:
+      containers:
+      - name: spencer
+        image: spencerhurrle/case-study:latest
+
+  replicas: 3
+  selector:
+    matchLabels:
+      app: spencer
+      type: flask
