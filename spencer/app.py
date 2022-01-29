@@ -6,7 +6,6 @@ app = Flask(__name__)
 def index():
     html = '''
     <title>Spencer Hurrle</title>
-    <h1>Technology Meets Ambition</h1>
     <h2>Professional Software Development and Process Automation</h2>
     <h3>About Me:</h3>
     <p>My name is Spencer Hurrle, and I’m currently a DevOps Student
@@ -19,5 +18,5 @@ def index():
     #return render_template("index.html", title=title)
     return html
 
-
-app.run(port=5000)
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=5000)
