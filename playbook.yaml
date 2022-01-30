@@ -2,13 +2,17 @@
   name: 'Prep VMs for app deployment'
   hosts: virtual_machines
   become: yes
-  become_method: sudo
   tasks:
     -
-      name: 'Verify who we are acting as'
-      command: whoami
+      name: 'Download Google Cloud public signing key and necessary packages for k8s'
+      command: sudo apt-get install -y apt-transport-https ca-certificates curl
+      command: sudo curl -fsSLo /usr/share/keyrings/kubernetes-archive-keyring.gpg https://packages.cloud.google.com/apt/doc/apt-key.gpg
+      command: echo "deb [signed-by=/usr/share/keyrings/kubernetes-archive-keyring.gpg] https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee /etc/apt/sources.list.d/kubernetes.list
+
     -
       name: 'Install Python 3'
       apt:
         name: python
-        
+              kubectl
+              docker.io
+
