@@ -46,7 +46,7 @@ def firstSteps():
         <li>Initially it was just the one page with my 60 second pitch, until I improvised using it as a way to present</li>
     </ul>
 
-    <a href="http://192.168.1.14:8001/api/v1/namespaces/default/services/webapp-service:80/proxy/2">What's a Dockerfile?</a>
+    <a href="http://192.168.1.14:8001/api/v1/namespaces/default/services/webapp-service:80/proxy/2">What's a Dockerfile?<br/></a>
     <a href="http://192.168.1.14:8001/api/v1/namespaces/default/services/webapp-service:80/proxy/">Home</a>
     '''
     return html
@@ -62,8 +62,8 @@ def servingJenkins():
         <li>I tried to do webhooks, but was unable to establish that link. Ultimately I ended up setting Jenkins to build every 5 minutes</li>
     </ul>
 
-    <a href="http://192.168.1.14:8001/api/v1/namespaces/default/services/webapp-service:80/proxy/3">You'll Never Believe What I Did Next</a>
-    <a href="http://192.168.1.14:8001/api/v1/namespaces/default/services/webapp-service:80/proxy/1">Back</a>
+    <a href="http://192.168.1.14:8001/api/v1/namespaces/default/services/webapp-service:80/proxy/3">You'll Never Believe What I Did Next<br/></a>
+    <a href="http://192.168.1.14:8001/api/v1/namespaces/default/services/webapp-service:80/proxy/1">Back<br/></a>
     <a href="http://192.168.1.14:8001/api/v1/namespaces/default/services/webapp-service:80/proxy/">Home</a>
     '''
     return html 
@@ -79,8 +79,8 @@ def kubernetes():
         <li>Even after cracking down with k8s, I was still unable to connect to my pods. Found that it was because my deployment file needed<br/>a containerPort identified under deployment containers. I also needed a proxy set up to <br/> reach my pods inside the VM</li>
     </ul>
 
-    <a href="http://192.168.1.14:8001/api/v1/namespaces/default/services/webapp-service:80/proxy/4">Any Ansible?</a>
-    <a href="http://192.168.1.14:8001/api/v1/namespaces/default/services/webapp-service:80/proxy/2">Back</a>
+    <a href="http://192.168.1.14:8001/api/v1/namespaces/default/services/webapp-service:80/proxy/4">Any Ansible?<br/></a>
+    <a href="http://192.168.1.14:8001/api/v1/namespaces/default/services/webapp-service:80/proxy/2">Back<br/></a>
     <a href="http://192.168.1.14:8001/api/v1/namespaces/default/services/webapp-service:80/proxy/">Home</a>
     '''
     return html
@@ -95,8 +95,8 @@ def ansible():
         <li>Kubernetes and Docker were both installed with Ansible</li>
     </ul>
 
-    <a href="http://192.168.1.14:8001/api/v1/namespaces/default/services/webapp-service:80/proxy/5">Moving Forward</a>
-    <a href="http://192.168.1.14:8001/api/v1/namespaces/default/services/webapp-service:80/proxy/3">Back</a>
+    <a href="http://192.168.1.14:8001/api/v1/namespaces/default/services/webapp-service:80/proxy/5">Moving Forward<br/></a>
+    <a href="http://192.168.1.14:8001/api/v1/namespaces/default/services/webapp-service:80/proxy/3">Back<br/></a>
     <a href="http://192.168.1.14:8001/api/v1/namespaces/default/services/webapp-service:80/proxy/">Home</a>
     '''
     return html
@@ -121,7 +121,7 @@ def conclusion():
         <li>Gain a deeper understanding of networking concepts</li>
     </ul>
 
-    <a href="http://192.168.1.14:8001/api/v1/namespaces/default/services/webapp-service:80/proxy/4">Back</a>
+    <a href="http://192.168.1.14:8001/api/v1/namespaces/default/services/webapp-service:80/proxy/4">Back<br/></a>
     <a href="http://192.168.1.14:8001/api/v1/namespaces/default/services/webapp-service:80/proxy/">Home</a>
     '''
 
