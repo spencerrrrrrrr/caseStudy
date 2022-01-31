@@ -26,6 +26,7 @@ def index():
 def how():
 #    title = "The Journey"
     html = '''
+    <img src="static\assets\img\cyber-g695e2d427_1920.jpg">
     <title>The Journey</title>
     <h1>How Did We Get Here?</h1>
     '''
