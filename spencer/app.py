@@ -22,14 +22,14 @@ def index():
     #return html
 
 
-@app.route('/how-did-we-get-here')
-def how():
+#@app.route('/how-did-we-get-here')
+#def how():
 #    title = "The Journey"
 #    html = '''
 #    <title>The Journey</title>
 #    <h1>How Did We Get Here?</h1>
 #    '''
 #    return html
-    return render_template("journey.html")
+#    return render_template("journey.html")
 
 app.run(host='0.0.0.0', port=5000)
