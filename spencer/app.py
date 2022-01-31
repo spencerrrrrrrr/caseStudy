@@ -109,7 +109,7 @@ def conclusion():
     <h3>Challenges</h3>
     <ul>
         <li>Exposing my app to the public was the biggest challenge for me<br/>I overcame this challenge by researching my issue until I found the appropriate fix</li>
-        <li>Another challenge was figuring out how to decorate the app in Flask. Since this was not a goal of the <br/>project, it was kept on the back burner most of the time.<br/>I overcame this issue by deciding to go with a white background/black text theme. Kidding! I did not get through this challenge.
+        <li>Another challenge was figuring out how to decorate the app in Flask. Since this was not a goal of the <br/>project, it was kept on the back burner most of the time.<br/>I did not resolve this issue.
         <li>Resource management was an challenge for me. My notes were sloppy and I was frequently forgetting commands.<br/>I resolved this a bit late in the process by moving to a digital notebook format, which is available to anyone via Github.</li>
     </ul>
 
