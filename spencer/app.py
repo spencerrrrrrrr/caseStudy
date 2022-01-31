@@ -124,5 +124,6 @@ def conclusion():
     <a href="http://192.168.1.14:8001/api/v1/namespaces/default/services/webapp-service:80/proxy/4">Back<br/></a>
     <a href="http://192.168.1.14:8001/api/v1/namespaces/default/services/webapp-service:80/proxy/">Home</a>
     '''
+    return html
 
 app.run(host='0.0.0.0', port=5000)
