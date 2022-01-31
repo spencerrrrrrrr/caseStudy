@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, url_for
 
 app = Flask(__name__)
 
@@ -14,13 +14,15 @@ def index():
          the most effective and transparent solutions in my work. In 
          addition to being technically proficient, I love to collaborate 
          with others and pool the best ideas into one amazing product.</p>
+
+    <a href="{{ url_for('how-did-we-get-here') }}">Take a look at the process</a>
     '''
     #return render_template("index.html", title=title)
     return html
 
 
 @app.route('/how-did-we-get-here')
-def how()
+def how():
     html = '''
     <title>The Journey</title>
     <h1>How Did We Get Here?</h1>
