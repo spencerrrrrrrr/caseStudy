@@ -18,4 +18,13 @@ def index():
     #return render_template("index.html", title=title)
     return html
 
+
+@app.route('/how-did-we-get-here')
+def how()
+    html = '''
+    <title>The Journey</title>
+    <h1>How Did We Get Here?</h1>
+    '''
+    return html
+
 app.run(host='0.0.0.0', port=5000)
