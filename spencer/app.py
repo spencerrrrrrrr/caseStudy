@@ -110,14 +110,16 @@ def conclusion():
     <ul>
         <li>Exposing my app to the public was the biggest challenge for me<br/>I overcame this challenge by researching my issue until I found the appropriate fix</li>
         <li>Another challenge was figuring out how to decorate the app in Flask. Since this was not a goal of the <br/>project, it was kept on the back burner most of the time.<br/>I overcame this issue by deciding to go with a white background/black text theme. Kidding! I did not get through this challenge.
-        <li>Time management was an challenge for me. The project is finished, but not nearly as well as I would have liked.<br/>I would say that I just barely overcame this issue</li>
+        <li>Resource management was an challenge for me. My notes were sloppy and I was frequently forgetting commands.<br/>I resolved this a bit late in the process by moving to a digital notebook format, which is available to anyone via Github.</li>
     </ul>
+
+    <a href="https://github.com/spencerrrrrrrr/DevOpsCommands">DevOps Commands</a>
 
     <h3>Goals</h3>
     <ul>
         <li>Achieve a connection between Ansible and an AWS EC2 for easy configuration</li>
         <li>Learn more about Flask usage and layout</li>
-        <li>Improve time management and efficiency</li>
+        <li>Improve time & resource management</li>
         <li>Gain a deeper understanding of networking concepts</li>
     </ul>
 
