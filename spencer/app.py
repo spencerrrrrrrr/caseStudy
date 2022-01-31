@@ -72,7 +72,7 @@ def servingJenkins():
 @app.route('/3')
 def kubernetes():
     html = '''
-    <h1>I Spent Way Too Much Time Getting Good With K8s</h1>
+    <h1>Kubernetes</h1>
     <ul>
         <li>Once the app is running well in my Docker container, it's time to deploy the pods!</li>
         <li>I took time to really comprehend how the deployment and service yaml files interact with each other and their roles in pod orchestration</li>
