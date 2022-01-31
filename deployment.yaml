@@ -17,9 +17,27 @@ spec:
       containers:
       - name: spencer
         image: spencerhurrle/case-study:latest
+        ports:
+        - containerPort: 5000
 
-  replicas: 3
+  replicas: 6
   selector:
     matchLabels:
       app: spencer
       type: flask
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: webapp-service
+spec:
+  type: LoadBalancer
+  ports:
+    - targetPort: 5000
+      port: 80
+      nodePort: 30001
+  selector:
+    app: spencer
+    type: flask
