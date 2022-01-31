@@ -16,7 +16,7 @@ def index():
          addition to being technically proficient, I love to collaborate 
          with others and pool the best ideas into one amazing product.</p>
 
-    <a href="{{ url_for('how-did-we-get-here') }}">Take a look at the process</a>
+    <a href="http://192.168.1.14:8001/api/v1/namespaces/default/services/webapp-service:80/proxy/how-did-we-get-here">Take a look at the process</a>
     '''
     #return render_template("index.html")
     return html
