@@ -102,7 +102,7 @@ def ansible():
     return html
 
 
-app.route('/5')
+@app.route('/5')
 def conclusion():
     html = '''
     <h1>Wrapping Up</h1>
