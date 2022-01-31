@@ -4,15 +4,41 @@
   become: yes
   tasks:
     -
-      name: 'Download Google Cloud public signing key and necessary packages for k8s'
-      command: sudo apt-get install -y apt-transport-https ca-certificates curl
-      command: sudo curl -fsSLo /usr/share/keyrings/kubernetes-archive-keyring.gpg https://packages.cloud.google.com/apt/doc/apt-key.gpg
-      command: echo "deb [signed-by=/usr/share/keyrings/kubernetes-archive-keyring.gpg] https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee /etc/apt/sources.list.d/kubernetes.list
-
+      name: Disable swap
+      command: swapoff -a
     -
-      name: 'Install Python 3'
+      name: 'Install Docker'
       apt:
-        name: python
-              kubectl
-              docker.io
+        name: docker.io
+        state: latest
+    -
+      name: 'Install Docker service'
+      service:
+        name: docker
+        enabled: yes
+        state: started
+#    -
+#      name: 'Enable Docker'
+#      command: usermod -aG docker $USER
+#      command: newgrp docker
+    -
+      name: 'App key for k8s'
+      apt_key:
+        url: https://packages.cloud.google.com/apt/doc/apt-key.gpg
+    -
+      name: 'Getting Kubernetes apt repo'
+      apt_repository:
+        repo: deb https://apt.kubernetes.io/ kubernetes-xenial main
+        state: present
+        filename: kubernetes.list
+    -
+      name: 'Install Kubernetes'
+      
+      apt:
+        name:
+          - kubelet
+          - kubeadm
+          - kubectl
+        state: present
+        update_cache: yes
 
