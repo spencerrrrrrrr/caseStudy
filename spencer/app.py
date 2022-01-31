@@ -107,11 +107,11 @@ def conclusion():
     html = '''
     <h1>Wrapping Up</h1>
     <h3>Challenges</h3>
-    <ol>
+    <ul>
         <li>Exposing my app to the public was the biggest challenge for me<br/>I overcame this challenge by researching my issue until I found the appropriate fix</li>
         <li>Another challenge was figuring out how to decorate the app in Flask. Since this was not a goal of the <br/>project, it was kept on the back burner most of the time.<br/>I overcame this issue by deciding to go with a white background/black text theme. Kidding! I did not get through this challenge.
         <li>Time management was an challenge for me. The project is finished, but not nearly as well as I would have liked.<br/>I would say that I just barely overcame this issue</li>
-    </ol>
+    </ul>
 
     <h3>Goals</h3>
     <ul>
