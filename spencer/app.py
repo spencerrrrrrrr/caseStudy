@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    title = "Spencer Hurrle"
+#    title = "Spencer Hurrle"
 #    html = '''
 #    <title>Spencer Hurrle</title>
 #    <h2>Professional Software Development and Process Automation</h2>
@@ -18,18 +18,18 @@ def index():
 
 #    <a href="{{ url_for('how-did-we-get-here') }}">Take a look at the process</a>
 #    '''
-    return render_template("index.html", title=title)
+    return render_template("index.html")
     #return html
 
 
 @app.route('/how-did-we-get-here')
 def how():
-    title = "The Journey"
+#    title = "The Journey"
 #    html = '''
 #    <title>The Journey</title>
 #    <h1>How Did We Get Here?</h1>
 #    '''
 #    return html
-    return render_template("journey.html", title=title)
+    return render_template("journey.html")
 
 app.run(host='0.0.0.0', port=5000)
